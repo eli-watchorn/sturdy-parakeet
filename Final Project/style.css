@@ -165,3 +165,44 @@ footer li{
 }
 
 /*  Sell Page  */
+
+/*  Buy Page  */
+
+#buy-listings {
+	text-align: center;
+	display: flex;
+}
+
+#buy-listings a {
+	text-decoration: none;
+}
+
+#buy-listings .listings-container {
+	padding: 20px;
+}
+
+#buy-listings .listing {
+	min-width: 250px;
+	padding: 10px 12px;
+	border: 2px solid #204b63;
+	border-radius: 25px;
+	cursor: pointer;
+	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
+	margin: 15px 0;
+	transition: 0.2s ease;
+}
+
+#buy-listings .listing:hover {
+	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.12);
+	transform: scale(1.05);
+}
+
+#buy-listings .listing img {
+	width: 100%;
+	border-radius: 20px;
+}
+
+#buy-listings .listing .description {
+	text-align: start;
+	padding: 10px 0;
+}
