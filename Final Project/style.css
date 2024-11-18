@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Be Vietnam Pro", sans-serif;
+}
+
+h1 {
+	font-size: 60px;
+	color: #204b63;
+	text-stroke: 20px solid #84a4ac;
+}
+
+h2 {
+	font-size: 45px;
+	color: #204b63;
+}
+
+h3, h4, h5, h6{
+	color: #204b63;
+}
+
+
+/*  Header  */
+
+#header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px 60px;
+	background: #f9fcfd;
+	position: sticky;
+	top: 0;
+	left: 0;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
+}
+
+#navbar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#navbar li {
+	list-style: none;
+	padding: 0 30px;
+	position: relative;
+}
+
+#navbar li a {
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+	color: #204b63;
+	transition: .2s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+	color: #84a4ac;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+	content: "";
+	width: 25%;
+	height: 2px;
+	background: #84a4ac;
+	position: absolute;
+	bottom: -2px;
+	right: 30px;
+}
+
+/*  Home  Page */
+
+#hero {
+	background-image: url('row-of-buildings.png');
+	height: 90vh;
+	width: 100%;
+	background-size: cover;
+	background-position: top 25% right 0;
+	background-attachment: scroll;
+	padding: 200px 80px;
+}
+
+#hero button {
+	border: 0;
+	background-color: #204b63;
+	color: #84a4ac;
+	border-radius: 300px;
+	width: 150px;
+	height: 40px;
+	transition: .2s ease;
+}
+
+#hero button:hover {
+	background-color: #84a4ac;
+	color: #204b63;
+	transform: scale(1.05);
+}
+
+#listTitle {
+	padding: 20px;
+	text-align: center;
+}
+
+#new-listings {
+	text-align: center;
+	display: flex;
+}
+
+#new-listings a {
+	text-decoration: none;
+}
+
+#new-listings .listings-container {
+	padding: 20px;
+}
+
+#new-listings .listing {
+	min-width: 250px;
+	padding: 10px 12px;
+	border: 2px solid #204b63;
+	border-radius: 25px;
+	cursor: pointer;
+	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
+	margin: 15px 0;
+	transition: 0.2s ease;
+}
+
+#new-listings .listing:hover {
+	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.12);
+	transform: scale(1.05);
+}
+
+#new-listings .listing img {
+	width: 100%;
+	border-radius: 20px;
+}
+
+#new-listings .listing .description {
+	text-align: start;
+	padding: 10px 0;
+}
+
+/*  Footer  */
+
+footer {
+	padding: 5px 30px;
+	display: flex;
+	background: #f9fcfd;
+	position: relative;
+	z-index: 2;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 	
+}
+
+footer div{
+	padding: 0 30px;
+}
+
+footer li{
+	list-style: none;
+	padding: 5px 3px;
+}
+
+/*  Sell Page  */
