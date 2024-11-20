@@ -170,7 +170,8 @@ footer li{
 
 #buy-listings {
 	text-align: center;
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 }
 
 #buy-listings a {
@@ -178,7 +179,7 @@ footer li{
 }
 
 #buy-listings .listings-container {
-	padding: 20px;
+	padding: 20px
 }
 
 #buy-listings .listing {
