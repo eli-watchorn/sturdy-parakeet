@@ -21,7 +21,27 @@ h3, h4, h5, h6{
 	color: #204b63;
 }
 
+html, body {
+	margin: 0;
+	height: 100%;
+}
 
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+.content {
+	flex: 1; /* Take up the remaining space to push the footer down */
+}
+  
+
+.footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+}
 /*  Header  */
 
 #header {
@@ -149,6 +169,7 @@ h3, h4, h5, h6{
 footer {
 	padding: 5px 30px;
 	display: flex;
+	justify-content: center;
 	background: #f9fcfd;
 	position: relative;
 	z-index: 2;
@@ -157,7 +178,7 @@ footer {
 
 footer div{
 	padding: 0 30px;
-}
+}z
 
 footer li{
 	list-style: none;
@@ -165,7 +186,81 @@ footer li{
 }
 
 /*  Sell Page  */
+#sellForm {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    padding: 20px;
+    background-color: #e7f3f7;
+    max-width: 100%;
+	max-height: 100%;
+    border-radius: 10px;
+}
 
+#imageContainer {
+    flex: 1; 
+    max-width: 400px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+#imagePreview {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+#imageUpload {
+    width: 100%;
+    padding: 10px;
+}
+#details {
+    flex: 2;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    padding: 20px;
+	margin-bottom: 24%;
+	margin-top: 20px;
+	position: fixed;
+}
+#details input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+	
+}
+
+button.sellBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #204b63;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button.sellBtn:hover{
+	background-color:#347aa0;
+}
+
+#details textarea {
+    width: 100%; 
+    height: 150px; 
+    min-height: 100px;
+    max-height: 300px; 
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
 /*  Buy Page  */
 
 #buy-listings {
