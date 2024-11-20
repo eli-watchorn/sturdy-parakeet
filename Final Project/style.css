@@ -188,7 +188,7 @@ footer li{
 /*  Sell Page  */
 #sellForm {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: nowrap;
     padding: 20px;
@@ -222,10 +222,11 @@ footer li{
     max-width: 600px;
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
     padding: 20px;
 	margin-bottom: 24%;
 	margin-top: 20px;
+	position: fixed;
 }
 #details input {
     width: calc(100% - 20px);
@@ -249,6 +250,17 @@ button.sellBtn:hover{
 	background-color:#347aa0;
 }
 
+#details textarea {
+    width: 100%; 
+    height: 150px; 
+    min-height: 100px;
+    max-height: 300px; 
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
 /*  Buy Page  */
 
 #buy-listings {
