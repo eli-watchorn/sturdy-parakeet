@@ -17,7 +17,17 @@ h2 {
 	color: #204b63;
 }
 
-h3, h4, h5, h6{
+h3 {
+	font-size: 30px;
+	color: #204b63;
+}
+
+h4 {
+	font-size: 20px;
+	color: #204b63;	
+}
+
+h5, h6, p{
 	color: #204b63;
 }
 
@@ -306,22 +316,29 @@ button.sellBtn:hover{
 
 /*  Listing Page  */
 
-#details {
+#listing-page {
 	display: flex;
-	margin-top: 20px;
+	margin: 50px;
 }
- 
-#details .single-image{
-	width: 200%;
-	margin: 10px;
+
+#listing-page .main-img{
+	width: 40%;
+	margin-right: 20px;
 }
 
 .small-img-group {
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
 	justify-content: space-between;
 }
 
 .small-img-col {
 	flex-basis: 24%;
 	cursor: pointer;
+	margin: 5px;
+}
+
+#listing-page .listing-details {
+	width: 50%;
+	padding-top: 30px;
 }
