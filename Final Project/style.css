@@ -2,7 +2,7 @@
 *{
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	box-sizing: content-box;
 	font-family: "Be Vietnam Pro", sans-serif;
 }
 
@@ -17,7 +17,17 @@ h2 {
 	color: #204b63;
 }
 
-h3, h4, h5, h6{
+h3 {
+	font-size: 30px;
+	color: #204b63;
+}
+
+h4 {
+	font-size: 20px;
+	color: #204b63;	
+}
+
+h5, h6, p{
 	color: #204b63;
 }
 
@@ -167,11 +177,11 @@ html, body {
 /*  Footer  */
 
 footer {
-	padding: 5px 30px;
+	padding: 10px 30px;
 	display: flex;
 	justify-content: center;
 	background: #f9fcfd;
-	position: relative;
+	position: sticky;
 	z-index: 2;
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 	
 }
@@ -182,10 +192,10 @@ footer div{
 
 footer li{
 	list-style: none;
-	padding: 5px 3px;
 }
 
 /*  Sell Page  */
+
 #sellForm {
     display: flex;
     justify-content: space-between;
@@ -291,6 +301,7 @@ button.sellBtn:hover{
     border-radius: 5px;
     resize: none;
 }
+
 /*  Buy Page  */
 
 #buy-listings {
@@ -331,4 +342,33 @@ button.sellBtn:hover{
 #buy-listings .listing .description {
 	text-align: start;
 	padding: 10px 0;
+}
+
+/*  Listing Page  */
+
+#listing-page {
+	display: flex;
+	margin: 50px;
+}
+
+#listing-page .main-img{
+	width: 40%;
+	margin-right: 20px;
+}
+
+.small-img-group {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-content: space-between;
+}
+
+.small-img-col {
+	flex-basis: 24%;
+	cursor: pointer;
+	margin: 5px;
+}
+
+#listing-page .listing-details {
+	width: 50%;
+	padding-top: 30px;
 }
