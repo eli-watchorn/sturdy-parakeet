@@ -52,13 +52,14 @@ html, body {
 	text-align: center;
 	padding: 10px;
 }
+
 /*  Header  */
 
 #header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 5px 60px;
+	padding: 5px 100px;
 	background: #f9fcfd;
 	position: sticky;
 	top: 0;
@@ -106,7 +107,7 @@ html, body {
 
 #hero {
 	background-image: url('row-of-buildings.png');
-	height: 90vh;
+	height: 60vh;
 	width: 100%;
 	background-size: cover;
 	background-position: top 25% right 0;
