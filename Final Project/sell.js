@@ -4,8 +4,12 @@ function validate() {
     fail = validateFullName();
     fail += validateEmail();
 
-    if(fail==""){showInfo();}
-    else{alert(fail); return false;}
+    if (fail === "") {
+        return true;
+    } else {
+        alert(fail);
+        return false;
+    }
 }
 
 function validateFullName(){
@@ -65,13 +69,30 @@ function expandImg(src) {
 }
 
 
-// if (form) {
-//     form.addEventListener("submit", (event) => {
-//         event.preventDefault();
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
+  
+    if (validate()) {
+      const formData = new FormData(form);
+  
+      for (const [key, value] of formData.entries()) {
+        sessionStorage.setItem(key, value);
+      }
+  
+      window.location.href = "buy.html";
+    }
+});
 
-//         const formData = new Formdata(form);
-//         const searchString
-//     })
-// }
+//for other page to use
 
+// window.onload = function () {
+//     const keys = Object.keys(sessionStorage);
+  
+//     keys.forEach((key) => {
+//       console.log(`${key}: ${sessionStorage.getItem(key)}`);
+//     });
+  
+//     // To use form data replace "data" with data you want
+//     document.getElementById("output").innerText = sessionStorage.getItem("data");
+//   };
 
