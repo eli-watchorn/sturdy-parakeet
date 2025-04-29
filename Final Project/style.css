@@ -106,7 +106,7 @@ html, body {
 /*  Home  Page */
 
 #hero {
-	background-image: url('row-of-buildings.png');
+	background-image: url('/other-images/row-of-buildings.png');
 	height: 60vh;
 	width: 100%;
 	background-size: cover;
@@ -115,10 +115,14 @@ html, body {
 	padding: 200px 80px;
 }
 
+#hero h1 {
+	color: #ffffff;
+}
+
 #hero button {
 	border: 0;
 	background-color: #204b63;
-	color: #84a4ac;
+	color: #ffffff;
 	border-radius: 300px;
 	width: 150px;
 	height: 40px;
