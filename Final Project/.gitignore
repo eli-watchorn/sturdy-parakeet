@@ -1,2 +1,3 @@
 /.vs
-node_modules
+/Backend/database.js
+/Backend/node_modules
